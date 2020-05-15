@@ -8,17 +8,15 @@ import {asMiddleware, Middleware} from '@loopback/express';
 import {RestBindings, RestTags} from '../keys';
 import {RouteEntry} from '../router';
 import {RestMiddlewareGroups} from '../sequence';
-import {InvokeMethod, OperationArgs, OperationRetval} from '../types';
+import {InvokeMethod, OperationArgs} from '../types';
 
-export class InvokeMethodProvider implements Provider<InvokeMethod> {
-  constructor(@inject(RestBindings.Http.CONTEXT) protected context: Context) {}
-
-  value(): InvokeMethod {
-    return (route, args) => this.action(route, args);
-  }
-
-  action(route: RouteEntry, args: OperationArgs): Promise<OperationRetval> {
-    return route.invokeHandler(this.context, args);
+export class InvokeMethodProvider {
+  static value(
+    @inject(RestBindings.Http.CONTEXT) context: Context,
+  ): InvokeMethod {
+    const invokeMethod: InvokeMethod = (route, args) =>
+      route.invokeHandler(context, args);
+    return invokeMethod;
   }
 }
 

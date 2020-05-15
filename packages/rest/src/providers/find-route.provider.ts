@@ -7,24 +7,20 @@ import {bind, Context, inject, Provider} from '@loopback/core';
 import {asMiddleware, Middleware} from '@loopback/express';
 import {HttpHandler} from '../http-handler';
 import {RestBindings, RestTags} from '../keys';
-import {ResolvedRoute} from '../router';
 import {RestMiddlewareGroups} from '../sequence';
-import {FindRoute, Request} from '../types';
+import {FindRoute} from '../types';
 
-export class FindRouteProvider implements Provider<FindRoute> {
-  constructor(
-    @inject(RestBindings.Http.CONTEXT) protected context: Context,
-    @inject(RestBindings.HANDLER) protected handler: HttpHandler,
-  ) {}
-
-  value(): FindRoute {
-    return request => this.action(request);
-  }
-
-  action(request: Request): ResolvedRoute {
-    const found = this.handler.findRoute(request);
-    found.updateBindings(this.context);
-    return found;
+export class FindRouteProvider {
+  static value(
+    @inject(RestBindings.Http.CONTEXT) context: Context,
+    @inject(RestBindings.HANDLER) handler: HttpHandler,
+  ): FindRoute {
+    const findRoute: FindRoute = request => {
+      const found = handler.findRoute(request);
+      found.updateBindings(context);
+      return found;
+    };
+    return findRoute;
   }
 }
 
