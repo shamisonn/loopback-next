@@ -19,6 +19,7 @@
  */
 
 export {JSONSchema7 as JsonSchema} from 'json-schema';
+export * from './booters';
 export * from './common-types';
 export * from './connectors';
 export * from './datasource';
