@@ -1,9 +1,9 @@
 ---
 lang: en
-title: 'Routes'
+title: 'Route'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI
 sidebar: lb4_sidebar
-permalink: /doc/en/lb4/Routes.html
+permalink: /doc/en/lb4/Route.html
 ---
 
 ## Overview
