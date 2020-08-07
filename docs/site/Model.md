@@ -607,7 +607,7 @@ Here are general attributes for property definitions:
       <td>Yes</td>
       <td>String</td>
       <td>
-        Property type. Can be any type described in <a href="LoopBack-types.html">LoopBack types</a>.
+        Property type. Can be any type described in <a href="https://loopback.io/doc/en/lb4/LoopBack-types.html">LoopBack types</a>.
       </td>
     </tr>
   </tbody>
