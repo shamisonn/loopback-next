@@ -4,6 +4,7 @@ title: 'Component'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Concepts
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Component.html
+redirect_from: /doc/en/lb4/Components.html
 ---
 
 ## Overview

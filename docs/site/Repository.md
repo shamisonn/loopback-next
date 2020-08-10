@@ -4,6 +4,7 @@ title: 'Repository'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Repository
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Repository.html
+redirect_from: /doc/en/lb4/Repositories.html
 ---
 
 A `Repository` represents a specialized `Service` interface that provides

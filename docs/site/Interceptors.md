@@ -4,6 +4,7 @@ title: 'Interceptor'
 keywords: LoopBack 4.0, LoopBack 4, Node.js, TypeScript, OpenAPI, Interceptor
 sidebar: lb4_sidebar
 permalink: /doc/en/lb4/Interceptor.html
+redirect_from: /doc/en/lb4/Interceptors.html
 ---
 
 ## Overview
