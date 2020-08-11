@@ -439,6 +439,35 @@ children:
       url: Booting-an-Application.html
       output: 'web, pdf'
 
+    - title: 'Decorators'
+      url: Decorators.html
+      output: 'web, pdf'
+      children:
+
+      - title: 'OpenAPI Decorators'
+        url: Decorators_openapi.html
+        output: 'web, pdf'
+
+      - title: 'Dependency Injection Decorator'
+        url: Decorators_inject.html
+        output: 'web, pdf'
+
+      - title: 'Authentication Decorator'
+        url: Decorators_authenticate.html
+        output: 'web, pdf'
+
+      - title: 'Service Decorators'
+        url: Decorators_service.html
+        output: 'web, pdf'
+
+      - title: 'Repository Decorators'
+        url: Decorators_repository.html
+        output: 'web, pdf'
+
+    - title: 'Mixin'
+      url: Mixin.html
+      output: 'web, pdf'
+
   - title: 'REST APIs'
     output: 'web, pdf'
     children:
@@ -519,39 +548,6 @@ children:
 
     - title: 'DataSource'
       url: DataSource.html
-      output: 'web, pdf'
-
-  - title: 'TypeScript'
-    output: 'web, pdf'
-    children:
-
-    - title: 'Decorators'
-      url: Decorators.html
-      output: 'web, pdf'
-      children:
-
-      - title: 'OpenAPI Decorators'
-        url: Decorators_openapi.html
-        output: 'web, pdf'
-
-      - title: 'Dependency Injection Decorator'
-        url: Decorators_inject.html
-        output: 'web, pdf'
-
-      - title: 'Authentication Decorator'
-        url: Decorators_authenticate.html
-        output: 'web, pdf'
-
-      - title: 'Service Decorators'
-        url: Decorators_service.html
-        output: 'web, pdf'
-
-      - title: 'Repository Decorators'
-        url: Decorators_repository.html
-        output: 'web, pdf'
-
-    - title: 'Mixin'
-      url: Mixin.html
       output: 'web, pdf'
 
 - title: 'Best practices'
