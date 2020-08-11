@@ -212,6 +212,10 @@ children:
       url: Express-middleware.html
       output: 'web, pdf'
 
+    - title: 'Using strong-error-handler'
+      url: Using-strong-error-handler.html
+      output: 'web, pdf'
+
     - title: 'Boot and Mount a LoopBack 3 Application'
       url: Boot-and-Mount-a-LoopBack-3-application.html
       output: 'web, pdf'
@@ -287,7 +291,7 @@ children:
         url: Calling-other-APIs-and-web-services.html
         output: 'web, pdf'
 
-  - title: 'Validation'
+  - title: 'Validating Data'
     url: Validation.html
     output: 'web, pdf'
     children:
@@ -303,7 +307,7 @@ children:
         url: Validation-ORM-layer.html
         output: 'web, pdf'
 
-  - title: 'Security'
+  - title: 'Securing Applications'
     output: 'web, pdf'
     children:
 
@@ -351,7 +355,7 @@ children:
       url: Loopback-component-authorization.html
       output: 'web, pdf'
 
-  - title: 'Deployment'
+  - title: 'Deploying Applications'
     url: Deployment.html
     output: 'web, pdf'
     children:
@@ -375,31 +379,24 @@ children:
         url: Appsody-LoopBack.html
         output: 'web, pdf'
 
-  - title: 'Running and Debugging Apps'
+      - title: 'Running cron jobs'
+        url: Running-cron-jobs.html
+        output: 'web, pdf'
+
+      - title: 'Health check'
+        url: Health.html
+        output: 'web, pdf'
+
+      - title: 'Metrics for Prometheus'
+        url: Metrics.html
+        output: 'web, pdf'
+
+  - title: 'Troubleshooting'
     output: 'web, pdf'
     children:
 
     - title: 'Setting debug strings'
       url: Setting-debug-strings.html
-      output: 'web, pdf'
-
-    - title: 'Using strong-error-handler'
-      url: Using-strong-error-handler.html
-      output: 'web, pdf'
-
-  - title: 'Other Extensions'
-    output: 'web, pdf'
-    children:
-    - title: 'Running cron jobs'
-      url: Running-cron-jobs.html
-      output: 'web, pdf'
-
-    - title: 'Health check'
-      url: Health.html
-      output: 'web, pdf'
-
-    - title: 'Metrics for Prometheus'
-      url: Metrics.html
       output: 'web, pdf'
 
 - title: 'Behind the Scenes'
